@@ -1,0 +1,571 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+<head>
+
+    <title>Paz Electricistas</title>
+    <meta name="description" content="
+    Paz electricistas, tus electricistas de confianza, te ofrece la mejor calidad de servicio en la ciudad de morelia michoacán, ofreciendo instalaciones electricas, instalaciones de energias solares e instalaciones hidráulicas">
+    <meta name="keywords" content="Electricistas, Morelia, Michoacán, Instalaciones, Instalaciones electricas, Instalaciones de energías solares, Instalaciones hidráulicas, experiencia, residencial, comercial, industrial,">
+    <meta name="language" content="Spanish">
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "paz_page/css/main.css" %}">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#ff5722">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#ff5722">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ff5722">
+
+
+
+</head>
+<body class="containe">
+<a href="{% static 'paz_page' %}" class="static_url" data-url="{% static 'paz_page' %}"></a>
+<section class="menu-nav pt-3 px-lg-4 px-2 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-base px-md-5 container-fluid ">
+        <div class="row full-row">
+            <div class="col-lg-1 col-md-4 container-fluid d-flex align-items-center justify-content-between pl-md-5 p-0">
+                <a class="navbar-brand pl-m-4 mr-5 ml-3" href="#">
+                    <div class="logo-paz "></div>
+                </a>
+                <div class="mx-4"></div>
+                <div class="mx-4"></div>
+
+                {#                <ul class="navbar-nav">#}
+                {#                    <li class="nav-item ml-5">#}
+                {#                        <a class="nav-link ml-2 mail-link phone-tex" href="mailto:hola@pazelectricistas.com">#}
+                {#                            <span class="mail-ico mt-2"></span>#}
+                {#                            hola@ <br> <span class="ml-4"></span> pazelectricistas.com#}
+                {#                        </a>#}
+                {#                    </li>#}
+                {#                </ul>#}
+                <button class="navbar-toggler ml-5" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-ico burger"></span>
+                </button>
+            </div>
+
+            <div class="col-lg-9 offset-lg-2 col-md-6">
+                <div class="collapse navbar-collapse my-lg-0 my-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-white d-flex justify-content-around align-items-center ">
+                        <li class="nav-item active-menu selectable">
+                            <a class="nav-link inicio-txt" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item selectable">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item selectable">
+                            <a class="nav-link" href="#proyecto">Proyectos</a>
+                        </li>
+                        <li class="nav-item selectable">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link divisor">|</span>
+                        </li>
+                        <li class="nav-item ml-1">
+                            <a class="nav-link phone-text" href="tel:+443 220 9267">
+                                <span class="phone mt-2"></span>
+                                <span id="lada">(443)</span> 220 9267
+                            </a>
+                        </li>
+                        <li class="nav-item ml-5">
+                            <a class="nav-link ml-2 mail-link phone-tex" href="mailto:hola@pazelectricistas.com">
+                                <span class="mail-ico mt-2"></span>
+                                hola@ <br> <span class="ml-4"></span> pazelectricistas.com
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link divisor">|</span>
+                        </li>
+
+                        {#Normal icons#}
+
+                        <li class="nav-item">
+                            <a href="#"><span class="facebook-ico nav-link normal-icons"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"><span class="insta-ico nav-link normal-icons"></span></a>
+                        </li>
+
+                        {#Responsive icons#}
+                        <div class="d-flex align-items-center justify-content-around responsive-icons-cont">
+                            <li class="nav-ite">
+                                <a href="#"><span class="facebook-ico mt-2 nav-link responsive-icons"></span></a>
+                            </li>
+                            <li class="nav-ite">
+                                <a href="#"><span class="insta-ico mt-2 nav-link responsive-icons"></span></a>
+                            </li>
+                            <li class="nav-ite">
+                                <a href="#"><span class="linkedin-ico mt-2 nav-link responsive-icons"></span></a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+<section class="hero-image img-fluid container-fluid d-flex justify-content-center align-items-center">
+    <div class="opa"></div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 98%">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="contenedor carousel-ite text-center mt-5">
+                    <h1 class="txt-color-base">Somos tus electricistas de confianza</h1>
+                    <h3 class="text-gray mb-5">con más de 30 años de experiencia</h3>
+                    <button class="btn  btn-paz">¡ Dinos Hola !</button>
+                    <button class="btn btn-paz-responsive">Escribenos</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="contenedor carousel-ite text-center mt-5">
+                    <h1 class="txt-color-base">Somos tus electricistas de confianza</h1>
+                    <h3 class="text-gray mb-5">con más de 30 años de experiencia</h3>
+                    <button class="btn  btn-paz">¡ Dinos Hola !</button>
+                    <button class="btn btn-paz-responsive">Escribenos</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-ico prev-slide" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-ico next-slide" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</section>
+
+<a href="#" id="servicios"></a>
+<section class="container-fluid py-5 servicios text-center">
+    <span class="cable-1 text-center"></span>
+    <div class="py-4"></div>
+    <h2 class="txt-color-base py-5 ">¿ <strong>Qué</strong> hacemos y en dónde lo hacemos ?</h2>
+    <div class="py-5"></div>
+</section>
+<section class="servicios-2 bg-gray py-5 container-fluid pt-5">
+    <div class="container px-4 px-lg-1">
+        <div class="text-white flex-wrap flex-lg-nowrap row px-lg-5 services-card-cont">
+            <div class="bg-base px-4 py-3 mx-2 col services-card left-card" data-card_no="0">
+                <div class="card-in px-5 py-4">
+                    <div class="text-center mb-5 mt-4">
+                        <span class="ray-ico icon-cards"></span>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="servicios-tit">Instalaciones Eléctricas</h5>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="bg-base px-4 py-lg-3 py-2 mx-2 col services-card center-card active-card animacion-der"
+                 data-card_no="1">
+                <div class="card-in px-5 py-4">
+                    <div class="text-center mb-5 mt-4">
+                        <span class="sol-ico icon-cards"></span>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="servicios-tit">Instalaciones de Energías Solares</h5>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="bg-base px-4 py-3 mx-2 col services-card right-card" data-card_no="2">
+                <div class="card-in px-5 py-4">
+                    <div class="text-center mb-5 mt-4">
+                        <span class="agua-ico icon-cards"></span>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="servicios-tit">Instalaciones Hidráulicas</h5>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="cables py-5 d-flex justify-content-center">
+            <span class="left-c cable-services"></span>
+            <span class="center-c cable-services active-cable"></span>
+            <span class="right-c cable-services"></span>
+        </div>
+        {#Listado de servicios #}
+        <div class="contenedor-servicios containe">
+
+        </div>
+    </div>
+</section>
+
+<section class="nosotros bg-white py-5 text-center container">
+    <h2 class="txt-color-base py-5"><strong>¿ Porqué</strong> nosotros ?</h2>
+    <div class="pq-visible-lg">
+        <div class="row mx-2 m-lg-0 flex-wrap lex-lg-nowrap text-gray-soft text-left porque-card-cont">
+            <div class="py-4 m-2 col bg-white shadow-paz left-card porque-card ">
+                <div class="row flex-lg-wrap flex-nowrap">
+                    <div class="col-lg-1 col-sm-3 ml-lg-2 col pr-0 p-lg-2">
+                        <span class="marcador-ico"></span>
+                    </div>
+                    <div class="col-lg-9 offset-lg-1 pl-0">
+                        <h5 class="servicios-tit">Experiencia</h5>
+                        <p>Believe it or not I'm walking on air. I never thought I could feel so free. Flying away on a
+                            wing
+                            and a</p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4 m-2 col bg-white shadow-paz center-card porque-card active-card-pq">
+                <div class="row flex-lg-wrap flex-nowrap">
+                    <div class="col-lg-1 col-sm-3 ml-lg-2 col pr-0 p-lg-2">
+                        <span class="seguridad-ico"></span>
+                    </div>
+                    <div class="col-lg-9 offset-lg-1 pl-0">
+                        <h5 class="servicios-tit">Seguridad</h5>
+                        <p>Believe it or not I'm walking on air. I never thought I could feel so free. Flying away on a
+                            wing
+                            and a</p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4 m-2 col  bg-white shadow-paz right-card porque-card ">
+                <div class="row flex-lg-wrap flex-nowrap">
+                    <div class="col-lg-1 col-sm-3 ml-lg-2 col pr-0 p-lg-2">
+                        <span class="seguridad-ico"></span>
+                    </div>
+                    <div class="col-lg-9 offset-lg-1 pl-0">
+                        <h5 class="servicios-tit">Propositivos</h5>
+                        <p>Believe it or not I'm walking on air. I never thought I could feel so free. Flying away on a
+                            wing
+                            and a</p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4 m-2 col bg-white shadow-paz porque-card no-show">
+                <div class="row flex-lg-wrap flex-nowrap">
+                    <div class="col-lg-1 col-sm-3 ml-lg-2 col pr-0 p-lg-2">
+                        <span class="corazon-ico"></span>
+                    </div>
+                    <div class="col-lg-9 offset-lg-1 pl-0">
+                        <h5 class="servicios-tit">Dedicados</h5>
+                        <p>Believe it or not I'm walking on air. I never thought I could feel so free. Flying away on a
+                            wing
+                            and a</p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4 m-2 col bg-white shadow-paz porque-card no-show">
+                <div class="row flex-lg-wrap flex-nowrap">
+                    <div class="col-lg-1 col-sm-3 ml-lg-2 col pr-0 p-lg-2">
+                        <span class="reloj-ico"></span>
+                    </div>
+                    <div class="col-lg-9 offset-lg-1 pl-0">
+                        <h5 class="servicios-tit">Accesibilidad</h5>
+                        <p>Believe it or not I'm walking on air. I never thought I could feel so free. Flying away on a
+                            wing
+                            and a</p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4 m-2 col  bg-white shadow-paz porque-card no-show">
+                <div class="row  flex-lg-wrap flex-nowrap">
+                    <div class="col-lg-1 col-sm-3 ml-lg-2 col pr-0 p-lg-2">
+                        <span class="reloj-ico"></span>
+                    </div>
+                    <div class="col-lg-9 offset-lg-1 pl-0">
+                        <h5 class="servicios-tit">Proactivos</h5>
+                        <p>Believe it or not I'm walking on air. I never thought I could feel so free. Flying away on a
+                            wing
+                            and a</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {#        <div class="row mx-2 m-lg-0 flex-wrap lex-lg-nowrap text-gray-soft text-left porque-card-cont">#}
+        {##}
+        {#        </div>#}
+    </div>
+</section>
+<a href="#" id="proyecto"></a>
+<section class="n-proyectos line-gray-top container-fluid py-5">
+    <div class="container text-gray-soft">
+        <div class="row text-center">
+            <div class="col-md-6 offset-md-3">
+                <h2 class="txt-color-base text-center"><strong>Nuestros</strong> Proyectos</h2>
+                <p class="proyectos-p">Electronics is the discipline dealing with the development
+                    and application of devices and systems involving the flow of electrons in a vacuum, in gaseous
+                    media,
+                    and in semicondu
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <ul class="d-flex menu-proy text-center flex-wrap mx-lg-0 justify-content-lg-around justify-content-start">
+                <li class="active-proyectos">Casas</li>
+                <li>Fraccionamientos</li>
+                <li>Hospitales</li>
+                <li>Salas de cine</li>
+                <li>Comercios</li>
+                <li>Edificaciones</li>
+            </ul>
+        </div>
+        <div class="row flex-wrap justify-content-center mt-5 images-proyectos">
+
+            <div class="img-proyecto"><img src="{% static 'paz_page/img/pr-1.jpg' %}" alt="" class="img-fluid"></div>
+            <div class="img-proyecto"><img src="{% static 'paz_page/img/pr-2.jpg' %}" alt="" class="img-fluid"></div>
+            <div class="img-proyecto"><img src="{% static 'paz_page/img/pr-3.jpg' %}" alt="" class="img-fluid"></div>
+            <div class="img-proyecto"><img src="{% static 'paz_page/img/pr-4.jpg' %}" alt="" class="img-fluid"></div>
+            <div class="img-proyecto"><img src="{% static 'paz_page/img/pr-5.jpg' %}" alt="" class="img-fluid"></div>
+            <div class="img-proyecto"><img src="{% static 'paz_page/img/pr-6.jpg' %}" alt="" class="img-fluid"></div>
+            <div class="img-proyecto"><img src="{% static 'paz_page/img/pr-7.jpg' %}" alt="" class="img-fluid"></div>
+            <div class="img-proyecto"><img src="{% static 'paz_page/img/pr-8.jpg' %}" alt="" class="img-fluid"></div>
+
+        </div>
+        <div class="row justify-content-center mt-4 contenedor-control">
+            <div class="controls-pag"></div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid acercate bg-base py-5 text-center">
+    <div class="acercate-fondo"></div>
+    <div class="row justify-content-center text-white">
+        <div class="titulo-acercate ">
+            <h5 class="pt-5">¡ Acercate con nosotros y pregúnta tus dudas o llámanos ahora !</h5>
+        </div>
+    </div>
+    <div class="row justify-content-center text-white pt-lg-4 pt-3">
+        <div class="col-md-6 d-flex justify-content-center justify-content-lg-around flex-wrap">
+            <btn class="btn-paz-acercate ">
+                <span class="mail-ico-base"></span>
+                <a href="mailto:hola@pazelectricistas.com">
+                    hola@pazelectricistas.com
+                </a>
+            </btn>
+            <btn class="btn-paz-acercate">
+                <span class="phone-base"></span>
+                <a href="tel: +52 (443) 389 3374">
+                    Morelia +52 (443) 389 3374
+                </a>
+            </btn>
+        </div>
+    </div>
+</section>
+
+<section class="testimonios container-fluid py-5 bg-gray">
+    <div id="carouselTest" class="carousel slide" data-ride="carousel" style="width: 98%">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row flex-wrap justify-content-center text-center">
+                    <div class="col-md-10 d-flex justify-content-center"><span class="comillas-ico"></span></div>
+                    <div class="col-xl-5 col-9 d-flex justify-content-center text-gray pt-5">
+                        <p class="testimonio">
+                            Electronics is the discipline dealing with the development and application of devices and
+                            systems
+                            involving the flow of electrons in a vacuum, in gaseous media, and in semicondu
+                        </p>
+                    </div>
+                    <div class="col-md-10 pt-4">
+                        <span class="firma">
+                            Sergio Paz Rivaz
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row flex-wrap justify-content-center text-center">
+                    <div class="col-md-10 d-flex justify-content-center"><span class="comillas-ico"></span></div>
+                    <div class="col-xl-5 col-9 d-flex justify-content-center text-gray pt-5">
+                        <p class="testimonio">
+                            Electronics is the discipline dealing with the development and application of devices and
+                            systems
+                            involving the flow of electrons in a vacuum, in gaseous media, and in semicondu
+                        </p>
+                    </div>
+                    <div class="col-md-10 pt-4">
+                        <span class="firma">
+                            Francisco Javier Pureco
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row flex-wrap justify-content-center text-center">
+                    <div class="col-md-10 d-flex justify-content-center"><span class="comillas-ico"></span></div>
+                    <div class="col-xl-5 col-9 d-flex justify-content-center text-gray pt-5">
+                        <p class="testimonio">
+                            Electronics is the discipline dealing with the development and application of devices and
+                            systems
+                            involving the flow of electrons in a vacuum, in gaseous media, and in semicondu
+                        </p>
+                    </div>
+                    <div class="col-md-10 pt-4">
+                        <span class="firma">
+                            Betel Estrada
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselTest" role="button" data-slide="prev">
+            <span class="carousel-control-prev-ico prev-slide" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselTest" role="button" data-slide="next">
+            <span class="carousel-control-next-ico next-slide" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<a href="#" id="contacto"></a>
+<div class="py-5"></div>
+<section class="pb-5 pt-3 container-fluid">
+    <div class="container">
+        {{ foo }}
+        {% if 'ok' in request.GET %}
+            <h2 class="txt-color-base text-center small-h2"><strong>Su mensaje ha sido enviado correctamente</strong>,
+                en breve nos pondremos en contacto</h2>
+        {% elif 'fail' in request.GET %}
+            <h3 class="text-danger mb-5">Su mensaje no se ha enviado correctamente, por favor intente de nuevo</h3>
+        {% else %}
+            <h2 class="txt-color-base text-center small-h2"><strong>Cuentanos en qué te podemos ayudar</strong> y
+                enseguida
+                nos contactaremos contigo</h2>
+        {% endif %}
+        <form action="" method="POST" class="pt-5">
+            {% csrf_token %}
+
+            <div class="row justify-content-center">
+                <div class="input-con form-group row col-lg-4 col-12">
+                    <label class="user-ico col-lg-1 col-1 " for="nombre"></label>
+                    {{ form.name }}
+                    {{ form.name.errors }}
+                </div>
+                <div class="input-con form-group row col-lg-4 col-12 ml-lg-3">
+                    <label class="phone-hollow-base col-lg-1 col-1 " for="telefono"></label>
+                    {{ form.phone }}
+                    {{ form.phone.errors }}
+                </div>
+                <div class="input-con form-group row col-lg-4 col-12 ml-lg-3">
+                    <label class="mail-ico-base col-lg-1 col-1 " for="correo"></label>
+                    {{ form.email }}
+                    {{ form.email.errors }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-con form-group row col-lg-1 col-3">
+                    <label class="ray-ico-base col-lg-1 col-2" for="correo"></label>
+                </div>
+                <div class="col-lg-11 mensaje-container col-9 pl-1">
+                    {{ form.mensaje }}
+                    {{ form.mensaje.errors }}
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-paz-lg">Enviar</button>
+            </div>
+        </form>
+    </div>
+</section>
+<footer class="bg-base py-5 container-fluid">
+    <div class="container text-white pt-5">
+        <div class="row pt-4">
+            <div class="col-xl-3 col-lg-4 col-footer- text-lg-left text-cente ml-4 ml-lg-0">
+                <img class="paz-footer" src="{% static "paz_page/img/iconos/paz-logo-footer.svg" %}" width="80%"
+                     height="auto" alt="">
+                <p class="mt-4 text-slab-3">
+                    Electronics is the discipline dealing with the
+                    development and application of devices
+                    and systems involving the flow of electrons
+                    in a vacuum, in gaseous media, and in semicondu
+                </p>
+                <div class="pt-2 ml-0 contenedor-contactosf">
+                    <a class="nav-link phone-link phon left-item" href="tel:+443 220 9267" style="margin-left: -15px;">
+                        <span class="phone-hollow mt-2"></span>
+                        <strong>(443)</strong> 220 9267 /
+                        <strong>(443)</strong> 220 9267
+                    </a>
+                    <a class="nav-link phone-link right-item" hrref="mailto:hola@pazelectricistas.com"
+                       style="font-size: .9em;margin-left: -15px;">
+                        <span class="mail-ico mt-2"></span>
+                        hola@pazelectricistas.com
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6 ml-lg-5 text-lg-left text-center mt-lg-0 mt-4">
+                <h5 class="museo-s-9">Servicios</h5>
+                <ul class="list-footer">
+                    <li>Instalaciones Eléctricas</li>
+                    <li>Instalaciones Hidráulicas</li>
+                    <li>Instalaciones Sanitarias</li>
+                    <li>Inst. Tecnologías Solares</li>
+                    <li>Inst. de Tinacos, bombas de agua</li>
+                    <li>Inst. de Sistemas de Seguridad</li>
+                    <li>Reparación de fugas de agua, luz, gas</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-md-6 mr-lg-5 text-lg-left text-center mt-lg-0 mt-4">
+                <h5 class="museo-s-9">Sitios</h5>
+                <ul class="list-footer">
+                    <li>Casas</li>
+                    <li>Oficinas</li>
+                    <li>Tiendas</li>
+                    <li>Supermercados</li>
+                    <li>Campo</li>
+                    <li>Industrias</li>
+                    <li>Centrales</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 ml-lg-0 ml-4 col-10 mt-lg-5 ml-lg-5 text-center p-lg-0 p-5">
+                <a href="#"><img class="ml-5 icon-f-1" src="{% static "paz_page/img/iconos/footer-face.svg" %}" alt=""
+                                 width="6%"></a>
+                <a href="#"><img class="ml-4 icon-f-2" src="{% static "paz_page/img/iconos/instagram.svg" %}" alt=""
+                                 width="12%"></a>
+                <a href="#"><img class="ml-4 icon-f-3" src="{% static "paz_page/img/iconos/footer-link.svg" %}" alt=""
+                                 width="12%"></a>
+            </div>
+        </div>
+        <div class="row justify-content-lg-between firmas-f mt-4 justify-content-center container">
+        <span>
+            Copyright 2018© <strong>Paz</strong>Electricistas®
+        </span>
+            <span class="lyonn-text">
+            Diseñado y desarrollado por <strong>Agencia Lyonn</strong>
+        </span>
+        </div>
+    </div>
+
+</footer>
+
+{#Modal de las imágenes#}
+<div id="modal-imagenes" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="{% static "paz_page/js/main.js" %}"></script>
+<script src="{% static "paz_page/js/simplePagination.js" %}"></script>
+<script src="{% static "paz_page/js/jquery.twbsPagination.min.js" %}"></script>
+<script src="{% static "paz_page/js/pagination.js" %}"></script>
+
+</html>

@@ -1,0 +1,1483 @@
+/*Importacion de las fuentes*/
+
+@font-face {
+    font-family: museo;
+    font-style: normal;
+    font-weight: 900;
+    src: url("fuentes/Museo_Sans/MuseoSans_900.otf");
+}
+
+@font-face {
+    font-family: museo;
+    font-style: normal;
+    font-weight: 500;
+    src: url("fuentes/Museo_Sans/MuseoSans_500.otf");
+}
+
+@font-face {
+    font-family: museo;
+    font-style: normal;
+    font-weight: 300;
+    src: url("fuentes/Museo_Sans/MuseoSans-300.otf");
+}
+
+@font-face {
+    font-family: museo;
+    font-style: italic;
+    font-weight: 300;
+    src: url("fuentes/Museo_Sans/MuseoSans-300Italic.otf");
+}
+
+@font-face {
+    font-family: museo;
+    font-style: normal;
+    font-weight: 700;
+    src: url("fuentes/Museo_Slab/Museo_Slab_700.otf");
+}
+
+@font-face {
+    font-family: autografo;
+    font-style: normal;
+    font-weight: 300;
+    src: url("fuentes/Autograf/Autograf_PersonalUseOnly.ttf");
+}
+
+@font-face {
+    font-family: museo-slab;
+    font-style: normal;
+    font-weight: 300;
+    src: url("fuentes/Museo_Slab/Museo_Slab_300.otf");
+}
+
+.bg-base {
+    background-color: #ff5722;
+}
+
+.bg-gray {
+    background-color: rgb(245, 245, 245);
+}
+
+.txt-color-base {
+    color: #ff5722;
+}
+
+.full-row {
+    width: 100%;
+}
+
+.font-museo-500 {
+    font-family: museo;
+    font-weight: 500;
+}
+
+.font-museo-900 {
+    font-family: museo;
+    font-weight: 900;
+}
+
+.logo-paz {
+    background: url('../img/logos/Logo1.svg');
+    height: 29px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    font-family: museo;
+    font-weight: 300;
+}
+
+strong {
+    font-family: museo;
+    font-weight: 900;
+}
+
+.active-menu {
+    font-family: museo;
+    font-weight: 900;
+}
+
+.navbar-nav {
+    width: 100%;
+    font-family: museo;
+    font-weight: 300;
+}
+
+.phone-text {
+    font-family: museo;
+    font-weight: 900;
+}
+
+nav .collapse .navbar-nav .nav-item a, nav .collapse .navbar-nav .nav-item span {
+    color: white;
+}
+
+ul > li.nav-item {
+    position: relative;
+}
+
+.phone {
+    background: url('../img/iconos/phone.svg');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9px;
+    margin-right: 10px;
+}
+
+.mail-ico {
+
+    background: url('../img/iconos/mail.svg');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9px;
+    margin-right: 10px;
+
+}
+
+.facebook-ico {
+    background: url('../img/iconos/facebook.svg');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+.insta-ico {
+    background: url('../img/iconos/instagram.svg');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+.linkedin-ico {
+    background: url('../img/iconos/linkedin.svg');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+#navbarSupportedContent > ul > li.nav-item.active-menu > a::after {
+    content: '';
+    border-right: 15px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 0px solid #FFFFFF;
+    border-bottom: 15px solid #FFFFFF;
+    position: absolute;
+    margin-top: 5px;
+    left: 0px;
+    margin-left: -13px;
+}
+
+/*Parte del hero image*/
+.hero-image {
+    position: relative;
+    height: 95vh;
+    z-index: 0;
+}
+
+.opa {
+    position: absolute;
+    height: 100%;
+    filter: opacity(23%);
+    width: 100%;
+    background: url("../img/BG.jpg"), gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor {
+    /*Reseteando el filtro para removerlo de los elementos y no se vean transparentes*/
+    filter: opacity(100%);
+}
+
+.text-gray {
+    color: rgb(128, 128, 128);
+}
+
+.text-gray-soft {
+    color: rgb(153, 153, 153);
+}
+
+h1 {
+    font-family: museo;
+    font-weight: 900;
+}
+
+.btn-paz {
+    background-color: #ff5722;
+    border-radius: 0px;
+    color: #FFFFFF;
+    padding: 15px 30px;
+}
+
+.btn-paz:hover {
+    background-color: #ff6b1e;
+    border-radius: 0px;
+    color: #FFFFFF;
+    padding: 15px 30px;
+}
+
+.btn-paz-responsive {
+    display: none;
+    background-color: #ff5722;
+    border-radius: 0px;
+    color: #FFFFFF;
+    padding: 15px 30px;
+}
+
+.btn-paz-responsive:hover {
+    background-color: #ff6b1e;
+    border-radius: 0px;
+    color: #FFFFFF;
+    padding: 15px 30px;
+}
+
+.prev-slide {
+    background-image: url("../img/iconos/prev.svg");
+    height: 20px;
+    width: 20px;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+}
+
+.next-slide {
+    background-image: url("../img/iconos/next.svg");
+    height: 20px;
+    width: 20px;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+}
+
+/*Personalizando el menu desplsegable*/
+.burger {
+    background: url('../img/iconos/burger-menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 12px;
+    margin-right: 10px;
+    /*Animaciones*/
+}
+
+.navbar-toggler {
+    border-color: transparent !important;
+}
+
+.responsive-icons {
+    display: none;
+}
+
+.mail-link {
+    display: none;
+}
+
+.navbar-nav {
+    line-height: 2.5em;
+}
+
+/*Segunda seccion-- servicios*/
+.servicios {
+    position: relative;
+}
+
+.cable-1 {
+    margin-left: auto;
+    top: 0;
+    margin-top: -35px;
+    position: absolute;
+    background: url('../img/iconos/cable-1.svg');
+    background-repeat: no-repeat;
+    padding: 35px;
+    margin-right: 10px;
+}
+
+.servicios-2 {
+    position: relative;
+}
+
+.servicios-2 .container {
+
+    margin-top: -160px;
+}
+
+.servicios-tit {
+    font-family: museo;
+    font-weight: 700;
+}
+
+/*Iconos*/
+.icon-cards {
+    padding: 22px;
+}
+
+.ray-ico {
+    background: url('../img/iconos/rayito.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sol-ico {
+    background: url('../img/iconos/sol-ico.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 32px;
+}
+
+.agua-ico {
+    background: url('../img/iconos/agua-ico.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-in {
+    cursor: pointer;
+}
+
+.active-card {
+    margin-top: -10px;
+    margin-bottom: -10px;
+
+    -webkit-transition: margin-top 500ms, margin-bottom 500ms; /* Safari */
+    transition: margin-top 1s, margin-bottom 500ms;
+}
+
+.active-card::after {
+    position: absolute;
+    bottom: 12px;
+    content: '';
+    border-right: 25px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 25px solid;
+}
+
+.cables {
+    overflow: hidden;
+}
+
+.cable-services {
+    min-width: 55vw;
+    min-height: 5vh;
+    position: absolute;
+    display: none;
+    animation-name: cable-animation;
+    animation-duration: 2s;
+}
+
+.left-c {
+    background: url('../img/iconos/cable-iz.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.center-c {
+    background: url('../img/iconos/cable-cen.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right-c {
+    background: url('../img/iconos/cable-der.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.active-cable {
+    display: block;
+}
+
+.residencial-ico {
+    background: url('../img/iconos/domestic.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 32px;
+}
+
+.residencial-ico {
+    background: url('../img/iconos/domestic.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 32px;
+}
+
+.comercial-ico {
+    background: url('../img/iconos/comercial.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 32px;
+}
+
+.industrial-ico {
+    background: url('../img/iconos/industrial.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 32px;
+}
+
+.list-electricistas {
+    list-style: none;
+    text-align: left;
+    line-height: 2.5;
+    padding-left: 2.5em;
+    font-size: 1.2em;
+}
+
+.list-electricistas > li::before {
+    content: url("../img/iconos/check_ok.svg");
+    height: 20px;
+    width: 18px;
+    position: absolute;
+    left: 40px;
+}
+
+.sol-ico-sm {
+    background: url('../img/iconos/sol-sm.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 22px;
+}
+
+.contenedor-servicios-1 {
+    animation-name: up-down;
+    animation-duration: 2s;
+}
+
+@keyframes cable-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes up-down {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.desc-min {
+    display: none;
+}
+
+/**************************
+¿Porqué Nosotros seccion?
+***************************
+*/
+
+.shadow-paz {
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.13);
+}
+
+.marcador-ico {
+    background-image: url("../img/iconos/marcador-ico.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px 32px;
+
+}
+
+.seguridad-ico {
+    background-image: url("../img/iconos/seguridad-ico.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px 42px;
+
+}
+
+.corazon-ico {
+    background-image: url("../img/iconos/corazon-ico.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px 42px;
+
+}
+
+.reloj-ico {
+    background-image: url("../img/iconos/reloj-ico.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px 42px;
+
+}
+
+.active-card-pq {
+    margin-top: -10px;
+    margin-bottom: -10px;
+
+    -webkit-transition: margin-top 500ms, margin-bottom 500ms; /* Safari */
+    transition: margin-top 1s, margin-bottom 500ms;
+}
+
+.active-card-pq > div > div:first-child::after {
+    position: absolute;
+    bottom: -16px;
+    left: 8px;
+    content: '';
+    color: #ff6b1e;
+    border-right: 25px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 25px solid;
+}
+
+.porque-card {
+    cursor: pointer;
+    flex-basis: 30%;
+}
+
+/*Nuestros proyectos*/
+.proyectos-p {
+    font-size: 1em;
+
+}
+
+.line-gray-top {
+    border-top: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+ul.menu-proy {
+    list-style: none;
+    line-height: 2.5em;
+    width: 100%;
+    padding: 0;
+    color: rgb(179, 179, 179);
+}
+
+ul.menu-proy > li {
+    cursor: pointer;
+    float: left;
+    position: relative;
+}
+
+.active-proyectos {
+    font-family: museo;
+    font-weight: 900;
+    color: #ff5722;
+}
+
+.active-proyectos:before {
+    position: absolute;
+    bottom: 10px;
+    left: -20px;
+    content: '';
+    color: #ff6b1e;
+    border-right: 13px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 13px solid;
+}
+
+.img-proyecto {
+    flex-basis: 22%;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-proyecto:hover {
+    margin-top: -10px;
+    flex-basis: 25%;
+    cursor: pointer;
+}
+
+.img-proyecto:hover:before {
+    position: absolute;
+    bottom: 10px;
+    content: '';
+    color: #ff6b1e;
+    border-right: 43px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 43px solid;
+    left: 10px;
+}
+
+ul.pagination > .item-paz > .page-link-paz {
+    position: relative;
+    display: block;
+    padding: .2rem .5rem;
+    margin-left: 10px;
+    line-height: 1.25;
+    color: #ff6b1e;
+    font-family: museo;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul.pagination > .item-paz.active > .page-link-paz {
+    z-index: 1;
+    color: #fff;
+    background-color: #ff6b1e;
+    border-color: #ff6b1e;
+    font-family: museo;
+    font-weight: 700;
+}
+
+.titulo-acercate {
+    flex-basis: 32%;
+}
+
+.btn-paz-acercate {
+    background: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-paz-acercate:hover {
+    background: aliceblue;
+}
+
+.btn-paz-acercate a {
+    color: #ff6b1e;
+}
+
+.mail-ico-base {
+    background: url('../img/iconos/mail_base.svg');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9px;
+
+}
+
+.ray-ico-base {
+    background: url('../img/iconos/rayo-hollow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 17px 30px;
+    max-width: 35px;
+    max-height: 35px;
+    margin-left: -3PX;
+}
+
+.mensaje-control {
+    min-width: 101%;
+    margin-left: -6px;
+    width: 104%;
+}
+
+.mensaje-container {
+    min-width: 94%;
+}
+
+.phone-base {
+    background: url('../img/iconos/phone-hollow-base.svg');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9px;
+    margin-right: 10px;
+}
+
+/*Seccion de acercate*/
+.acercate {
+    position: relative;
+    z-index: 100;
+}
+
+.acercate-fondo {
+    background-image: url('../img/iconos/fondo-acercate.svg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*seccion de testimonios*/
+.comillas-ico {
+
+    background: url(../img/iconos/comillas-cita.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 25px 40px;
+}
+
+.testimonio {
+    font-family: museo-slab;
+    font-style: normal;
+}
+
+.firma {
+    font-family: autografo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5em;
+    color: #ff5722;
+
+}
+
+/*Seccion de contacto*/
+.user-ico {
+    background: url("../img/iconos/user-ico.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5px;
+}
+
+.input-contacto {
+    border: none !important;
+    border-bottom: 1px solid gray !important;
+    border-radius: 0px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(128, 128, 128) !important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(128, 128, 128) !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(128, 128, 128) !important;
+}
+
+.phone-hollow-base {
+    background: url(../img/iconos/phone-hollow-base.svg);
+    height: 10px;
+    /* width: 20px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+
+.input-cont {
+    flex-basis: 30%;
+}
+
+.full-input {
+    flex-basis: 100%;
+}
+
+.btn-paz-lg {
+    background-color: #ff5722;
+    border-radius: 0px;
+    color: #FFFFFF;
+    padding: 15px 150px;
+}
+
+.btn-paz-lg:hover {
+    background-color: #ff6b1e;
+    border-radius: 0px;
+    color: #FFFFFF;
+    padding: 15px 150px;
+}
+
+.phone-hollow {
+    background: url('../img/iconos/phone-hollow.svg');
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7px;
+    margin-right: 10px;
+}
+
+.phone-link {
+    color: white;
+    font-family: museo;
+    font-weight: 500;
+    font-size: .8em;
+}
+
+.phone-link-footer {
+    font-family: museo;
+    font-weight: 500;
+    font-size: .8em;
+}
+
+.phone-link:hover {
+    color: white;
+}
+
+.text-slab-3 {
+    font-family: museo-slab;
+    font-weight: 300;
+    font-size: .9em;
+}
+
+.museo-s-9 {
+    font-family: museo;
+    font-weight: 900;
+    color: #A63916;
+}
+
+.paz-footer {
+    margin-left: -35px;
+}
+
+.list-footer {
+    list-style: none;
+    line-height: 2.5em;
+    color: white;
+    font-family: museo;
+    font-weight: 500;
+    font-size: .8em;
+    margin-left: -40px
+}
+
+.col-footer-1 {
+    flex-basis: 20%;
+}
+
+.col-footer-2 {
+    flex-basis: 20%;
+}
+
+.col-footer-3 {
+    flex-basis: 20%;
+}
+
+.col-footer-4 {
+    flex-basis: 10%;
+}
+
+.firmas-f {
+    font-family: museo;
+    font-weight: 300;
+    color: #A63916;
+    font-size: .8em;
+    position: relative;
+}
+
+.lyonn-text:after {
+    position: absolute;
+    bottom: 5px;
+    /* left: 8px; */
+    right: -10px;
+    content: '';
+    color: #A63916;
+    border-right: 15px solid;
+    border-top: 15px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 0px solid;
+}
+
+/*if thw screen is 600 px or smaller*/
+@media only screen and (max-width: 600px) {
+
+    .divisor {
+        display: none;
+    }
+
+    .input-cont {
+        flex-basis: 80%;
+    }
+
+    .responsive-icons {
+        display: block;
+    }
+
+    .normal-icons {
+        display: none;
+    }
+
+    .full-row {
+        width: auto;
+    }
+
+    .responsive-icons-cont {
+        width: -webkit-fill-available;;
+    }
+
+    .phone-text {
+        font-family: museo;
+        font-weight: 500;
+        font-size: .8em;
+    }
+
+    #lada {
+        font-family: museo;
+        font-weight: 900;
+    }
+
+    .phone {
+        background: url('../img/iconos/phone-hollow.svg');
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 7px;
+        margin-right: 10px;
+    }
+
+    .mail-link {
+        display: block;
+    }
+
+    .carousel-item h3 {
+        color: #ff5722;
+        font-family: museo;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    .btn-paz-responsive {
+        display: inline-flex;
+    }
+
+    .btn-paz {
+        display: none;
+    }
+
+    /*
+    *********************************
+    **Rsponsivo para Nuestros proyectos
+    ******************************
+    */
+    .n-proyectos {
+        margin-top: 50%;
+    }
+
+    .img-proyecto {
+        flex-basis: 50%;
+        margin: 0px 0px;
+        margin-bottom: 0px;
+    }
+
+    .menu-proy > li {
+        flex-basis: 30%;
+    }
+
+    .active-proyectos:before {
+        position: absolute;
+        bottom: 10px;
+        left: -10px;
+        content: '';
+        color: #ff6b1e;
+        border-right: 13px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 0px solid transparent;
+        border-bottom: 13px solid;
+    }
+
+    /*    .img-proyecto:hover {
+            margin-top: -10px;
+            flex-basis: 50%;
+            cursor: pointer;
+        }
+
+        .img-proyecto:hover:before {
+            position: absolute;
+            bottom: 15px;
+            content: '';
+            color: #ff6b1e;
+            border-right: 43px solid transparent;
+            border-top: 10px solid transparent;
+            border-left: 0px solid transparent;
+            border-bottom: 43px solid;
+            left: 10px;
+        }*/
+    .img-proyecto:hover {
+        margin-top: 0px;
+        flex-basis: 50%;
+        cursor: pointer;
+    }
+
+    .img-proyecto:hover:before {
+        position: absolute;
+        bottom: 15px;
+        content: '';
+        color: #ff6b1e;
+        border-right: 43px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 0px solid transparent;
+        border-bottom: 43px solid;
+        left: 10px;
+    }
+
+    /*Acercate a nosostros seccion*/
+    .titulo-acercate {
+        flex-basis: 50%;
+    }
+
+    .mensaje-container {
+        min-width: inherit;
+    }
+
+    .btn-paz-lg {
+        padding: 15px 50px;
+    }
+
+    .btn-paz-lg:hover {
+        padding: 15px 50px;
+    }
+
+    .lyonn-text:after {
+        position: absolute;
+        bottom: 5px;
+        /* left: 8px; */
+        right: 5px;
+        content: '';
+        color: #A63916;
+        border-right: 20px solid;
+        border-top: 20px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 0px solid;
+    }
+
+}
+
+/*Reglas para el menu de servicios*/
+@media only screen and (max-width: 600px) {
+
+    .active-card::before {
+        content: 'Saber más';
+        position: absolute;
+        bottom: 0;
+        left: 35%;
+    }
+
+    .small-h2 {
+        font-size: 1.2em;
+    }
+
+    .list-electricistas {
+        line-height: 2.5;
+        padding-left: 4.5em;
+        font-size: 1em;
+    }
+
+    .active-card {
+        margin-top: -10px;
+        margin-bottom: -10px;
+        -webkit-transition: margin-top 500ms, margin-bottom 500ms; /* Safari */
+        transition: margin-top 1s, margin-bottom 500ms;
+    }
+
+    h5 {
+        font-family: museo;
+        font-size: 1em;
+    }
+
+    .active-card {
+        margin-top: -20px;
+        padding-bottom: 55px !important;
+    }
+
+    h1, h3, h2 {
+        font-family: museo;
+        font-size: 1.5em;
+    }
+
+    .services-card, .porque-card {
+        position: absolute;
+        width: 79%;
+    }
+
+    .services-card-cont {
+        position: relative;
+        margin-bottom: 230px;
+    }
+
+    .left-card {
+        left: -5px;
+        z-index: 0;
+    }
+
+    .center-card {
+        left: 28px !important;
+        z-index: 1 !important;
+        -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
+    }
+
+    .right-card {
+        right: -5px !important;
+        z-index: 0 !important;
+    }
+
+    .no-show {
+        display: none;
+    }
+
+    .right-card-anim {
+        animation-name: derecha;
+        animation-duration: 0.5s;
+    }
+
+    .right-anim-porque {
+        animation-name: derecha_2;
+        animation-duration: 0.5s;
+    }
+
+    .left-anim-porque {
+        animation-name: izq_2;
+        animation-duration: 0.5s;
+    }
+
+    .left-card-anim {
+        animation-name: izq;
+        animation-duration: 0.5s;
+    }
+
+    @keyframes derecha {
+        from {
+            left: 56px;
+            margin-top: -20px
+        }
+        to {
+            left: 28px;
+            margin-top: -20px
+        }
+    }
+    @keyframes derecha_2 {
+        from {
+            left: 56px;
+            margin-top: 8px
+        }
+        to {
+            left: 28px;
+            margin-top: 8px
+        }
+    }
+    @keyframes izq {
+        from {
+            left: -10px;
+            margin-top: -20px
+        }
+        to {
+            left: 28px;
+            margin-top: -20px
+        }
+    }
+    @keyframes izq_2 {
+        from {
+            left: -10px;
+            margin-top: 8px
+        }
+        to {
+            left: 28px;
+            margin-top: 8px
+        }
+    }
+
+    .cont-abs {
+        position: absolute;
+        width: 90%;
+    }
+
+    .porque-card-cont {
+        position: relative;
+    }
+
+    .seguridad-ico {
+        background-image: url(../img/iconos/seguridad-ico.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 5px 20px;
+    }
+
+    .marcador-ico {
+        background-image: url(../img/iconos/marcador-ico.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 6px 23px;
+    }
+
+    .corazon-ico {
+        background-image: url(../img/iconos/corazon-ico.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 5px 25px;
+    }
+
+    .reloj-ico {
+        background-image: url(../img/iconos/reloj-ico.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 5px 22px;
+    }
+
+    p {
+        font-size: .8em;
+    }
+}
+
+/*Reglas para el menu de servicios*/
+@media only screen and (min-width: 600px) and (max-width: 812px) {
+
+    .btn-paz-responsive {
+        display: inline-flex;
+    }
+
+    .btn-paz {
+        display: none;
+    }
+
+    .list-electricistas {
+        line-height: 2;
+        padding-left: 1.3rem;
+        font-size: 0.8rem;
+    }
+
+    .list-electricistas > li::before {
+        content: url(../img/iconos/check_ok.svg);
+        height: 13px;
+        width: 9px;
+        position: absolute;
+        left: 23px;
+    }
+
+    .active-card::before {
+        content: 'Saber más';
+        position: absolute;
+        bottom: 0;
+        left: 43%;
+    }
+
+    h5 {
+        font-family: museo;
+        font-size: 1em;
+    }
+
+    .active-card {
+        margin-top: -20px;
+        padding-bottom: 55px !important;
+    }
+
+    h1, h3, h2 {
+        font-family: museo;
+        font-size: 1.5em;
+    }
+
+    .services-card, .porque-card {
+        position: absolute;
+        width: 79%;
+    }
+
+    .services-card-cont {
+        position: relative;
+        margin-bottom: 230px;
+    }
+
+    .left-card {
+        left: -5px !important;
+        z-index: 0 !important;
+    }
+
+    .center-card {
+        left: 50px !important;
+        z-index: 1 !important;
+        -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
+    }
+
+    .no-show {
+        display: none;
+    }
+
+    .right-card {
+        right: -5px !important;
+        z-index: 0 !important;
+    }
+
+    .right-card-anim {
+        animation-name: derecha;
+        animation-duration: 0.5s;
+    }
+
+    .left-card-anim {
+        animation-name: izq;
+        animation-duration: 0.5s;
+    }
+
+    @keyframes derecha {
+        from {
+            left: 78px;
+            margin-top: -20px
+        }
+        to {
+            left: 50px;
+            margin-top: -20px
+        }
+    }
+    @keyframes izq {
+        from {
+            left: -10px;
+            margin-top: -20px
+        }
+        to {
+            left: 50px;
+            margin-top: -20px
+        }
+    }
+
+    .row-porqu {
+        position: absolute;
+        width: 90%;
+    }
+
+    .porque-card-cont {
+        position: inherit;
+    }
+
+    .porque-card {
+        position: inherit;
+    }
+
+    .no-show {
+        display: inline-flex;
+    }
+
+    /*Seccionpara nuestros proyectos*/
+    .img-proyecto {
+        flex-basis: 40%;
+        margin: 0px 0px;
+        margin-bottom: 0px;
+    }
+
+    .menu-proy > li {
+        flex-basis: 33%;
+    }
+
+    .img-proyecto:hover {
+        margin-top: 0px;
+        flex-basis: 50%;
+        cursor: pointer;
+    }
+
+    .img-proyecto:hover:before {
+        position: absolute;
+        bottom: 15px;
+        content: '';
+        color: #ff6b1e;
+        border-right: 43px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 0px solid transparent;
+        border-bottom: 43px solid;
+        left: 10px;
+    }
+
+    .mensaje-container {
+        min-width: inherit;
+    }
+
+    .btn-paz-lg {
+        padding: 15px 50px;
+    }
+
+    .btn-paz-lg:hover {
+        padding: 15px 50px;
+    }
+
+    .firmas-f {
+        font-family: museo;
+        font-weight: 300;
+        color: #A63916;
+        font-size: 1em;
+    }
+
+    .mensaje-control {
+        min-width: 101%;
+        margin-left: -10px !important;
+        width: 104%;
+    }
+
+    .paz-footer {
+        margin-left: -35px;
+        width: 50%;
+    }
+
+    #left-tel {
+        width: 50%;
+    }
+
+    .contenedor-contactosf {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lyonn-text:after {
+        position: absolute;
+        bottom: 5px;
+        /* left: 8px; */
+        right: 80px;
+        content: '';
+        color: #A63916;
+        border-right: 20px solid;
+        border-top: 20px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 0px solid;
+    }
+
+    .icon-f-1 {
+        width: 3%;
+        margin-left: 20% !important;
+    }
+
+    .icon-f-2 {
+        width: 6%;
+    }
+
+    .icon-f-3 {
+        width: 6%;
+    }
+
+    .navbar-nav {
+        line-height: .8em;
+    }
+
+    .divisor {
+        display: none;
+    }
+
+    .responsive-icons-cont {
+        width: -webkit-fill-available;
+    }
+
+    .responsive-icons {
+        display: block;
+    }
+
+    .normal-icons {
+        display: none;
+    }
+
+    .mail-link {
+        display: block;
+    }
+
+}
+
